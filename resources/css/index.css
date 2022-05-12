@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+h2, h3, h4, h5, p {
+    margin: 0.75rem 0;
+    text-align: center;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.325rem;
+    color: seashell;
+    background-color: hsla(0, 0%, 0%, 1);
+    opacity: 0.9;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-direction: column;
+}
+
+/* Navegation Bar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-bottom: 1px solid seashell;
+    background-color: hsla(0, 0%, 0%, 1);
+    width: 100%;
+}
+
+header img {
+    height: 85%;
+    min-height: 25px;
+    max-height: 50px;
+    margin: 0.5% 2%;
+}
+
+nav {
+    width: 70%;
+}
+
+.navegation {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: seashell;
+}
+
+/* Banner */
+
+.banner {
+    background-image: url("../images/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 95%;
+    max-height: 700px;
+    margin-top: 4rem;
+}
+
+.banner div {
+    width: inherit;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    width: 100%;
+    margin: 15% 0;
+}
+
+/* Tea of the Month */
+
+.featuredTea {
+    width: 85%;
+    margin: 5% 0;
+}
+
+.tea div {
+    margin: 1%;
+}
+
+.featuredTea img {
+    max-height: 200px;
+}
+
+/* Location */
+
+.location {
+    background-image: url("../images/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 95%;
+}
+
+.location h2 {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.street {
+    width: 100%;
+}
+
+.street div {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    width: 20%;
+    min-height: 18rem;
+    min-width: 13rem;
+    max-width: 15rem;
+    margin: 1% 2%;
+    padding: 1%;
+}
+
+/* About */
+
+.about {
+    margin: 5% 0;
+}
+
+.about h5 {
+    letter-spacing: 0.2rem;
+}
+
+/* Footer */
+
+footer p {
+    font-size: small;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    margin-left: 1%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1600px) {
+    html {
+        font-size: 12px;
+    }
+
+    h4, h5, p {
+        font-weight: 400;
+        letter-spacing: 0.07rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .featuredTea {
+        width: 90%;
+    }
+
+    header img {
+        max-height: 30px;
+    }
+
+    .navegation {
+        justify-content: center;
+    }
+}
